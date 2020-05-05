@@ -25,12 +25,15 @@ body {
     background-color: rgba(0,0,0,0.40);
 }
 
-.bio-container {
-    .media-main {
-        padding-left: 50px;
-    }
-    
+.heading {
+    color: #e92b13;
 }
+
+.list-group-item {
+    border-bottom-color: #e92b13;
+}
+
+.bio-container {}
 
 .schedule-container {}
 
@@ -42,7 +45,7 @@ body {
 
 .block-divider {
     width: 100%;
-    height: 5px;
+    height: 4px;
     border: 0;
 }
 
