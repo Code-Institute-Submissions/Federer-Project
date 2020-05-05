@@ -14,6 +14,9 @@
 <div class="container-fluid navbar-container">
 <nav class="navbar navbar-dark navbar-expand-sm">
 <div class="navbar-brand">Roger Federer</div>
+<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="navbarNavDropdown">
 <ul class="navbar-nav mr-auto">
 <li class="nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
 <li class="nav-item mr-2"><a class="nav-link" href="/">Bio</a></li>
@@ -21,6 +24,7 @@
 <li class="nav-item mr-2"><a class="nav-link" href="/">Achievements</a></li>
 <li class="nav-item mr-2"><a class="nav-link" href="/">Join Today</a></li>
 </ul>
+</div>
 </nav>
 </div>
  
@@ -31,7 +35,7 @@
 <div class="col-12">
 <section class="home jumbotron text-center">
 <h1 class="jumbotron-header" >Join Federer's Fan Page Today</h1>
-<button class="btn btn--cta btn--red btn-lg">Join Today!</button>
+<button class="btn btn--cta btn--red btn-lg" data-toggle="modal" data-target="#joinModal">Join Today!</button>
 
 </section>
 </div>
@@ -140,7 +144,7 @@ Drop down arrow below each with wins and when-->
 <div class="col-12 my-5">
 <section class="join">
 <h2 class="text-uppercase">Join Today</h2>
-<button class="btn btn--cta btn--red btn-sm">Join Today!</button>
+<button class="btn btn--cta btn--red btn-sm" data-toggle="modal" data-target="#joinModal">Join Today!</button>
 <!--Join form with Name, email and join button-->
 </section>
 </div>
@@ -152,7 +156,35 @@ Drop down arrow below each with wins and when-->
 Social links
 </footer>
 
+<div class="modal" tabindex="-1" role="dialog" id="joinModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Join Today!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="form-group"> 
+    <label for="Firstname">First Name</label>
+    <input type="name" class="form-control" id="Firstname" aria-describedby="FirstnameHelp">
+    <label for="Lastname">Last Name</label>
+    <input type="name" class="form-control" id="Lastname" aria-describedby="LastnameHelp">
+    <label for="exampleInputEmail1">Email Address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <button type="submit" class="btn btn--cta btn--red">Join Today!</button>
+</form>
+      </div>
+    </div>
+  </div>
+</div>
 
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>   
 </body>
 </html>
