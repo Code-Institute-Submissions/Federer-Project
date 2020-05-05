@@ -33,6 +33,10 @@ body {
     border-bottom-color: #e92b13;
 }
 
+.list-group-flush {
+    margin-bottom: 20px;
+}
+
 .bio-container {}
 
 .schedule-container {}
