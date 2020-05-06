@@ -38,6 +38,23 @@ body {
     margin-bottom: 20px;
 }
 
+.table {
+    margin-top: 20px;
+}
+
+.table-striped .grey {
+    background-color: #898080;
+    color: #fff;
+}
+
+.table-striped .red {
+    background-color: #ffbdb9;
+}
+
+.table-striped .white {
+    background-color: #fff;
+}
+
 .bio-container {}
 
 .schedule-container {}
