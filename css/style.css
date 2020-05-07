@@ -25,6 +25,10 @@ body {
     background-color: rgba(0,0,0,0.40);
 }
 
+.fan-info {
+    color: #fff;
+}
+
 .heading {
     color: #e92b13;
 }
@@ -120,24 +124,8 @@ body {
     z-index: 1;
 }
 
-.navbar .navbar-nav {
-    color: #e92b13;
-    font-weight: bold;
-}
-
-a {
-    color: #e92b13;
-    text-decoration: none;
-    background-color: transparent;
-}
-
-a:hover {
-    color: #e92b13;
-}
-
-.navbar-brand {
-    color: #e92b13;
-    font-weight: bold;
+.navbar-nav {
+    color: #fff;
 }
 
 /*Jumbotron*/
@@ -177,4 +165,47 @@ a:hover {
 .btn--red:active:focus {
     background-color: #e92b13;
     border-color: #d10d00;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #898080;
+    color: #fff;
+    min-height: 100px;
+    margin: 0;
+}
+
+.footer-btn,
+.updates,
+.social {
+    margin-top: 10px;
+}
+
+.social-links {
+    padding-bottom: 15px;
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: #e92b13;
+}
+
+#footer-details {
+    padding: 20px;
 }
