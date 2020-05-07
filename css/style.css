@@ -55,6 +55,10 @@ body {
     background-color: #fff;
 }
 
+.aopen {
+    margin-bottom: 5px;
+}
+
 .bio-container {}
 
 .schedule-container {}
@@ -121,6 +125,11 @@ body {
     color: #fff;
     background-color: #e92b13;
     border-color: #e92b13;
+}
+
+.btn--grey {
+    color: #fff;
+    background-color: #898080
 }
 
 .btn--red:hover,
