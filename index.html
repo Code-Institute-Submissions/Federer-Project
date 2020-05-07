@@ -13,22 +13,24 @@
 </head>
 
 <body>
-    <div class="container-fluid navbar-container">
-        <nav class="navbar navbar-dark navbar-expand-sm">
-            <div class="navbar-brand">Roger Federer</div>
+    <header class="container-fluid navbar-container">
+    <section id="home">Home</section>
+        <nav class="navbar navbar-expand-sm fixed-top">
+        <div class="navbar-brand">Roger Federer</div>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link" href="/">Biography</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link" href="/">Schedule</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link" href="/">Achievements</a></li>
-                    <li class="nav-item mr-2"><a class="nav-link" href="/">Join Today</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="#biography">Biography</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="#schedule">Schedule</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="#achievements">Achievements</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="#join">Join Today</a></li>
                 </ul>
             </div>
         </nav>
-    </div>
+    </header>
+
 
     <!--Home-->
     <div class="container-fluid home-container">
@@ -49,7 +51,7 @@
         <div class="row text-center">
             <div class="col-12 my-5">
                 <section class="bio">
-                    <h2 class="text-uppercase bio-heading">Biography</h2>
+                    <h2 class="text-uppercase bio-heading" id="biography">Biography</h2>
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-4">
                             <div class="media-main">
@@ -107,7 +109,7 @@
         <div class="row text-center">
             <div class="col-12 my-5">
                 <section class="schedule">
-                    <h2 class="text-uppercase">Schedule</h2>
+                    <h2 class="text-uppercase" id="schedule">Schedule</h2>
                     <div class="row text-center">
                         <div class="col-12">
                             <table class="table table-striped">
@@ -224,7 +226,7 @@
         <div class="row text-center">
             <div class="col-12 my-5">
                 <section class="achievements">
-                    <h2 class="text-uppercase majors-heading">Achievements</h2>
+                    <h2 class="text-uppercase majors-heading" id="achievements">Achievements</h2>
                     <div class="row logos">
                         <div class="col-12 col-sm-12 col-md-6 col-lg-2">
                         <img src="https://i.pinimg.com/236x/5c/b6/8d/5cb68dae10b850f708153c5a3563b067.jpg" class="aopen" width="80" height="80">
@@ -298,10 +300,6 @@
   </div>
   </div>
 </div>
-
-                        <!--Logos of majors and ATP tour.
-Drop down arrow below each with wins and when-->
-
                     </div>
                 </section>
             </div>
@@ -314,7 +312,7 @@ Drop down arrow below each with wins and when-->
         <div class="row text-center">
             <div class="col-12 my-5">
                 <section class="join">
-                    <h2 class="text-uppercase">Join Today</h2>
+                    <h2 class="text-uppercase" id="join">Join Today</h2>
                     <button class="btn btn--cta btn--red btn-sm" data-toggle="modal" data-target="#joinModal">Join Today!</button>
                     <!--Join form with Name, email and join button-->
                 </section>

@@ -120,10 +120,25 @@ body {
     z-index: 1;
 }
 
-.navbar-nav {
-    color: #fff;
+.navbar .navbar-nav {
+    color: #e92b13;
+    font-weight: bold;
 }
 
+a {
+    color: #e92b13;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:hover {
+    color: #e92b13;
+}
+
+.navbar-brand {
+    color: #e92b13;
+    font-weight: bold;
+}
 
 /*Jumbotron*/
 
