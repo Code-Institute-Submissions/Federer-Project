@@ -29,6 +29,14 @@ body {
     color: #e92b13;
 }
 
+.bio-heading {
+    margin-bottom: 20px;
+}
+
+.majors-heading {
+    margin-bottom: 20px;
+}
+
 .list-group-item {
     border-bottom-color: #e92b13;
     text-align: center;
@@ -55,8 +63,24 @@ body {
     background-color: #fff;
 }
 
-.aopen {
+.logos {
+    padding-left: 110px;
+}
+
+.aopen,
+.fopen,
+.wimbledon,
+.usopen,
+.davis {
     margin-bottom: 5px;
+}
+
+.dropdown-menu {
+    background-color: #fff;
+    color: #e92b13;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #e92b13;
 }
 
 .bio-container {}
