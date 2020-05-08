@@ -1,39 +1,36 @@
 <img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
 
-Welcome MichaelWarner32,
+Roger Federer's Fan Page
+--- 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+UX
 
-## Gitpod Reminders
+This web page was designed to give fans of Tennis and especially Federer a chance to keep informed about his progress throughout each season. It was built to show three key features which are popular when looking into other professional athletes. These are; Biography, Achievements and a Schedule. My project is the best to obtain this information as it has all three features listed above, it is also very easy to use and has a join scheme to allow those who see fit to recieve email updates. This makes it easier to stay up to date even if they are not on the web page. 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+If one wanted to see how many titles Roger has one in each major championship in his career this can easily be done by visiting the Achievements sections of the web page. This section clearly states each major championship with a handy dropdown arrow which outline how many he has one and the years in which they were won. This was an aspect that I wanted to make as clear as possible since being a Federer fan myself I know that the easier it is to find out this information the more I will return.
 
-`python3 -m http.server`
+An athetes upcoming Schedulefor the year is hard to find especially on the Tennis circuit as there are hundreds of tournaments played per year and not all of them can be played by Roger. With that in mind, I have dedicated a section solely to his Tennis Schedule. A simple table format was used as it clearly states all the key information needed; Tournament, Location and Date. This aspect would be something wroth checking regularly or signing up to recieve these by email.
 
-A blue button should appear to click: *Make Public*,
+Finally, it is important to briefly outline that Federer isn't just a professional Tennis player, he is also a father and a husband. Knowing that I decided that this may be another aspect that would be of interest to those looking to find out about his story before Tennis and what his life is like off the court.
 
-Another blue button should appear to click: *Open Browser*.
+Wirerframe
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+https://balsamiq.cloud/sctgv77/pxr7w1k/rE985
 
-A blue button should appear to click: *Make Public*,
+Also can be foundin a separate directory labelled Wirerframe.
 
-Another blue button should appear to click: *Open Browser*.
+I created a Wirerframe to make it easier to visualize the direction I wanted to take when building the web page. Therer were parts I kept the same such as the Biography section less the title. On the other hand, there were other aspects that i changed or got rid of such as the layout of the Achievemnts section.The section looked to thin so I put each logo in the formation of the number five side of dice. This way it spreads the content over the page as opposed to one line of content.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+The form section was taken out and instead a modal was attached to each Join Today button. When designing the button I felt it was much nicer to view a modal rather than moving you to the bottom of the page to fill in the form.
 
-## Updates Since The Instructional Video
+Features
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+Navbar - allows the user to click on each heading in the navbar to quickly jump to each section of the page.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+Join Today button - allows the user to click and immediatley fill out a form to join the fan page. This button is found at teh top and bottom of the page.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+Dropdown arrows - allows the user to see each Majo Championship logo and use the dropdown to see the wins. This was used to keep information hidden until directly requested.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+Social links - allows the user to click on each icon in the footer to jump straight to Roger's social media sites. These were designed to open in a new tab to stop the user having to use the previous page button in the browaser to return to the web page.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+Features that I would look to implement would be the functionality of the Join Today buttons. I know that this would be back end development but I feel this would be a good aspect to be intoduced sooner rather than later.
