@@ -3,7 +3,7 @@ body {
 }
 .home-container {
     height: 100vh;
-    background: url("../images/images10.jpg") no-repeat bottom right fixed; 
+    background: url("../images/fed.jpg") no-repeat; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -15,6 +15,10 @@ body {
 
   position: relative;
 }
+
+
+
+
 
 .opaque-overlay {
     position: absolute;
@@ -289,7 +293,7 @@ label {
 
 /*Media queries*/
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .shout {
         width: auto;
         max-width: 100%;
@@ -297,7 +301,21 @@ label {
     }
     .social {
         margin-top: -20px;
-    }
-        
+    }  
     }
 }
+
+@media screen and (max-width: 767px) {
+    .img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+    }
+
+    @media screen and (min-width: 768px)
+    (max-width: 1023px) {
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+    }
