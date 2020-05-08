@@ -29,16 +29,29 @@ body {
     color: #fff;
 }
 
-.heading {
-    color: #e92b13;
-}
-
 .bio-heading {
     margin-bottom: 20px;
+    font-weight: 580;
 }
 
 .majors-heading {
     margin-bottom: 20px;
+    color: #fff;
+    font-weight: 580;
+}
+
+.schedule-heading {
+    margin-bottom: 20px;
+    font-weight: 580;
+}
+
+.shout {
+    vertical-align: middle;
+    border-style: none;
+    object-fit: cover;
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
 }
 
 .list-group-item {
@@ -50,8 +63,24 @@ body {
     margin-bottom: 20px;
 }
 
+.ranking {
+    color: #e92b13;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+.three {
+    vertical-align: middle;
+    border-style: none;
+    object-fit: cover;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
+
 .table {
     margin-top: 20px;
+    border: 1px solid #888888;
 }
 
 .table-striped .grey {
@@ -67,33 +96,33 @@ body {
     background-color: #fff;
 }
 
-.logos {
-    padding-left: 110px;
+.achievements-container {
+    background-color: #e92b13;
+}
+
+.wins {
+    color: #fff;
+    font-weight: 400;
+}
+
+.titles {
+    color: #fff;
+    text-decoration: underline;
 }
 
 .aopen,
 .fopen,
 .wimbledon,
 .usopen,
-.davis {
+.atp {
     margin-bottom: 5px;
+    vertical-align: middle;
+    border-style: none;
+    object-fit: cover;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
 }
-
-.dropdown-menu {
-    background-color: #fff;
-    color: #e92b13;
-    font-weight: bold;
-    text-decoration: underline;
-    text-decoration-color: #e92b13;
-}
-
-.bio-container {}
-
-.schedule-container {}
-
-.achievements-container {}
-
-.join-container {}
 
 /*Block dividers*/
 
@@ -110,11 +139,13 @@ body {
 /*Navbar*/
 
 .navbar-container {
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
     padding-left: 0;
     padding-right: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 1;
 }
 
 .navbar {
@@ -126,6 +157,10 @@ body {
 
 .navbar-nav {
     color: #fff;
+}
+
+.navbar .navbar-toggler {
+    border: 0;
 }
 
 /*Jumbotron*/
@@ -176,10 +211,23 @@ footer {
     margin: 0;
 }
 
-.footer-btn,
+.footer-main {
+    text-align: center;
+}
+
+.footer-text {
+    margin-bottom: 0;
+}
+
 .updates,
 .social {
-    margin-top: 10px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.footer-btn {
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .social-links {
@@ -208,4 +256,48 @@ footer {
 
 #footer-details {
     padding: 20px;
+}
+
+.modal  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-content {
+    margin-top: 50%;
+}
+
+.modal-button {
+    display: flex;
+    justify-content: center;
+}
+
+.form-text {
+    display: block;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+
+/*Media queries*/
+
+@media only screen and (max-width: 600px) {
+    .shout {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+    }
+    .social {
+        margin-top: -20px;
+    }
+        
+    }
 }

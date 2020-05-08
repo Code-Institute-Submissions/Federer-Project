@@ -7,14 +7,13 @@
         <title>Roger Federer Fan Page</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="css/style.css" type="text/css" />
     </head>
 
     <body>
         <header class="container-fluid navbar-container">
-            <section class="title mr-2" id="home"></section>
+            <section class="title mr-2"></section>
             <nav class="navbar navbar-dark navbar-expand-sm">
                 <div class="navbar-brand">Roger Federer</div>
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,8 +35,8 @@
             <div class="opaque-overlay">&nbsp;</div>
             <div class="row">
                 <div class="col-12">
-                    <section class="home jumbotron text-center">
-                        <h1 class="jumbotron-header">Join Federer's Fan Page Today</h1>
+                    <section class="home jumbotron text-center" id="home">
+                        <h1 class="jumbotron-header">Are you a Federer fan?</h1>
                         <p class="fan-info">For regular email updates!</p>
                         <button class="btn btn--cta btn--red btn-lg" data-toggle="modal" data-target="#joinModal">Join Today!</button>
                     </section>
@@ -52,14 +51,13 @@
                     <section class="bio">
                         <h2 class="text-uppercase bio-heading" id="biography">Biography</h2>
                         <div class="row">
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-5">
                                 <div class="media-main">
-                                    <img src="images/federer2.jpg" class="rounded-circle" width="230" height="200" />
+                                    <img src="images/federer2.jpg" class="shout" />
                                     <div class="media-body"></div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-12 col-md-12 col-lg-8">
-                                <h3><strong class="heading">Roger Federer</strong></h3>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-7">
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">On the 8th August 1981 Roger was born to Robert and Lynette Federer</li>
                                     <li class="list-group-item">Roger began playing Tennis at the age of six in Basel, Switzerland</li>
@@ -68,7 +66,7 @@
                                     <li class="list-group-item">Mirka and Roger have two sets of twins; Myla and Charlene, Lenny and Leo</li>
                                     <li class="list-group-item">Roger turned professional in 1998 after winning the boy's singles title at Wimbledon that same year</li>
                                     <li class="list-group-item">Throughout his Tennis career Roger has won 20 Grand Slams and is the curent record holder</li>
-                                    <li class="list-group-item">Roger's current world ranking is number <a href="https://www.atptour.com/en/players/roger-federer/f324/overview" target="blank"> 4</a></li>
+                                    <li class="list-group-item">Roger's current world ranking is number <a class="ranking" href="https://www.atptour.com/en/players/roger-federer/f324/overview" target="_blank"> 4</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -76,19 +74,19 @@
                         <div class="row">
                             <div class="d-none d-lg-block col-lg-4">
                                 <div class="media-left">
-                                    <img src="images/federer3.jpg" class="rounded-circle mr-3" width="300" height="200" />
+                                    <img src="images/federer3.jpg" class="three mr-3"  />
                                     <div class="media-body"></div>
                                 </div>
                             </div>
                             <div class="d-none d-lg-block col-lg-4">
                                 <div class="media-center">
-                                    <img src="images/federer4.jpg" class="rounded-circle mr-3" width="300" height="200" />
+                                    <img src="images/federer4.jpg" class="three mr-3"  />
                                     <div class="media-body"></div>
                                 </div>
                             </div>
                             <div class="d-none d-lg-block col-lg-4">
                                 <div class="media-right">
-                                    <img src="images/federer5.jpg" class="rounded-circle mr-3" width="300" height="200" />
+                                    <img src="images/federer5.jpg" class="three mr-3" />
                                     <div class="media-body"></div>
                                 </div>
                             </div>
@@ -97,100 +95,50 @@
                 </div>
             </div>
         </div>
-        <hr class="block-divider block-divider--red" />
+        
 
         <!--Achievements-->
-        <div class="container achievements-container">
+        <div class="container-fluid achievements-container">
             <div class="row text-center">
                 <div class="col-12 my-5">
                     <section class="achievements">
                         <h2 class="text-uppercase majors-heading" id="achievements">Achievements</h2>
                         <div class="row logos">
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                                <img src="https://i.pinimg.com/236x/5c/b6/8d/5cb68dae10b850f708153c5a3563b067.jpg" class="aopen" width="150" height="140" />
-                                <div class="btn-group">
-                                    <button class="btn btn--grey btn-md" type="button">
-                                        Total Titles
-                                    </button>
-                                    <button type="button" class="btn btn-sm btn--red dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="sr-only">Toggle Dropdown</span>
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        2004, 2006, 2007, 2010, 2017, 2018
-                                    </div>
-                                </div>
-                            </div>
+                                <img src="https://i.pinimg.com/236x/5c/b6/8d/5cb68dae10b850f708153c5a3563b067.jpg" class="aopen" />
+                                <p class="wins"><a class="titles" href="https://ausopen.com/history/honour-roll/mens-singles" target="_blank">Total wins 6</a></p>
+                                </div>                             
+                                
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                                <img src="https://i.pinimg.com/236x/4b/60/01/4b60018622705620c2088048356a46ea.jpg" class="fopen" width="180" height="120" />
-                                <div class="btn-group">
-                                    <button class="btn btn--grey btn-md" type="button">
-                                        Total Titles
-                                    </button>
-                                    <button type="button" class="btn btn-sm btn--red dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="sr-only">Toggle Dropdown</span>
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        2009
-                                    </div>
-                                </div>
+                                <img src="https://i.pinimg.com/236x/4b/60/01/4b60018622705620c2088048356a46ea.jpg" class="fopen" />
+                                <p class="wins"><a class="titles" href="https://www.rolandgarros.com/en-us/palmares" target="_blank">Total wins 1</a></p>
                             </div>
                             <div class="col-12 col-lg-12">
-                                <img src="https://i.pinimg.com/236x/7e/85/f1/7e85f1d626613546ccff5d3240d31966.jpg" class="wimbledon" width="130" height="130" />
-                                <div class="btn-group">
-                                    <button class="btn btn--grey btn-md" type="button">
-                                        Total Titles
-                                    </button>
-                                    <button type="button" class="btn btn-sm btn--red dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="sr-only">Toggle Dropdown</span>
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        2003, 2004, 2005, 2006, 2007, 2009, 2012, 2017
-                                    </div>
-                                </div>
+                                <img src="https://i.pinimg.com/236x/7e/85/f1/7e85f1d626613546ccff5d3240d31966.jpg" class="wimbledon" />
+                               <p class="wins"><a class="titles" href="https://www.wimbledon.com/en_GB/draws_archive/champions/gentlemenssingles.html" target="_blank">Total wins 8</a></p>
                             </div>
 
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                                <img src="https://i.pinimg.com/236x/33/cc/98/33cc989ff7c370dfbf1159a23d05ad4c.jpg" class="usopen" width="160" height="120" />
-                                <div class="btn-group">
-                                    <button class="btn btn--grey btn-md" type="button">
-                                        Total Titles
-                                    </button>
-                                    <button type="button" class="btn btn-sm btn--red dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="sr-only">Toggle Dropdown</span>
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        2004, 2005, 2006, 2007, 2008
-                                    </div>
-                                </div>
+                                <img src="https://i.pinimg.com/236x/33/cc/98/33cc989ff7c370dfbf1159a23d05ad4c.jpg" class="usopen" />
+                                <p class="wins"><a class="titles" href="https://www.usopen.org/en_US/visit/history/mschamps.html" target="_blank">Total wins 5</a></p>
                             </div>
 
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                                <img src="https://i.pinimg.com/236x/22/49/b8/2249b87a93974559397a4c0c222e7331.jpg" class="davis" width="180" height="120" />
-                                <div class="btn-group">
-                                    <button class="btn btn--grey btn-md" type="button">
-                                        Total Titles
-                                    </button>
-                                    <button type="button" class="btn btn-sm btn--red dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <span class="sr-only">Toggle Dropdown</span>
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        2014
-                                    </div>
-                                </div>
+                                <img src="images/atp.jpg" class="atp" />
+                                <p class="wins"><a class="titles" href="https://www.atptour.com/en/players/roger-federer/f324/titles-and-finals" target="_blank">Total wins 103</a></p>
                             </div>
                         </div>
                     </section>
                 </div>
             </div>
         </div>
-        <hr class="block-divider block-divider--red" />
 
         <!--Schedule-->
         <div class="container schedule-container">
             <div class="row text-center">
                 <div class="col-12 my-5">
                     <section class="schedule">
-                        <h2 class="text-uppercase" id="schedule">Schedule</h2>
+                        <h2 class="text-uppercase schedule-heading" id="schedule">Schedule</h2>
                         <div class="row text-center">
                             <div class="col-12">
                                 <table class="table table-striped">
@@ -205,92 +153,92 @@
                                         <tr>
                                             <th scope="row" class="red">Hopman Cup</th>
                                             <td class="d-none d-sm-table-cell red">Perth, Australia</td>
-                                            <td class="red">29-Dec-20 - 05-Jan-21</td>
+                                            <td class="red">29-Dec - 05-Jan-21</td>
                                         </tr>
                                         <tr>
                                             <th scope="row" class="white">Australian Open</th>
                                             <td class="d-none d-sm-table-cell white">Melbourne, Australia</td>
-                                            <td class="white">14-Jan-21 - 27-Jan-21</td>
+                                            <td class="white">14-Jan - 27-Jan-21</td>
                                         </tr>
                                         <tr>
                                             <th scope="row" class="red">Dubai Duty Free</th>
                                             <td class="d-none d-sm-table-cell red">Dubai, UAE</td>
-                                            <td class="red">25-Feb-21 - 02-Mar-21</td>
+                                            <td class="red">25-Feb - 02-Mar-21</td>
                                         </tr>
                                         <tr>
                                             <th scope="row" class="white">Indian Wells</th>
                                             <td class="d-none d-sm-table-cell white">California, USA</td>
-                                            <td class="white">07-Mar-21 - 17-Mar-21</td>
+                                            <td class="white">07-Mar - 17-Mar-21</td>
                                         </tr>
                                         <tr>
                                             <th scope="row" class="red">Miami</th>
                                             <td class="d-none d-sm-table-cell red">Miami,USA</td>
-                                            <td class="red">20-Mar-21 - 31-Mar-21</td>
+                                            <td class="red">20-Mar - 31-Mar-21</td>
                                         </tr>
                                         <tr>
                                             <th scope="row" class="white">Madrid</th>
                                             <td class="d-none d-sm-table-cell white">Madrid, Spain</td>
-                                            <td class="white">05-May-21 - 12-May-21</td>
+                                            <td class="white">05-May - 12-May-21</td>
                                         </tr>
                                         <tr>
                                             <th scope="row" class="red">Rome</th>
                                             <td class="d-none d-sm-table-cell red">Rome, Italy</td>
-                                            <td class="red">12-May-21 - 19-May-21</td>
+                                            <td class="red">12-May - 19-May-21</td>
                                         </tr>
                                         <tr>
                                             <th scope="row" class="white">Roland Garros</th>
                                             <td class="d-none d-sm-table-cell white">Paris, France</td>
-                                            <td class="white">26-May-21 - 09-Jun-21</td>
+                                            <td class="white">26-May - 09-Jun-21</td>
                                         </tr>
                                         <tr>
                                             <th scope="row" class="red">Gerry Webber Open</th>
                                             <td class="d-none d-sm-table-cell red">Halle, Germany</td>
-                                            <td class="red">17-Jun-21 - 23-Jun-21</td>
+                                            <td class="red">17-Jun - 23-Jun-21</td>
                                         </tr>
                                         <tr>
                                             <th scope="row" class="white">Wimbledon</th>
                                             <td class="d-none d-sm-table-cell white">London, UK</td>
-                                            <td class="white">01-Jul-21 - 14-Jul-21</td>
+                                            <td class="white">01-Jul - 14-Jul-21</td>
                                         </tr>
                                         <tr>
                                             <th scope="row" class="red">Cincinnati</th>
                                             <td class="d-none d-sm-table-cell red">Cincinnati, USA</td>
-                                            <td class="red">11-Aug-19 - 18-Aug-19</td>
+                                            <td class="red">11-Aug - 18-Aug-19</td>
                                         </tr>
                                         <tr>
                                             <th scope="row" class="white">US Open</th>
                                             <td class="d-none d-sm-table-cell white">New York, USA</td>
-                                            <td class="white">26-Aug-21 - 08-Sep-21</td>
+                                            <td class="white">26-Aug - 08-Sep-21</td>
                                         </tr>
                                         <tr>
                                             <th scope="row" class="red">Laver Cup</th>
                                             <td class="d-none d-sm-table-cell red">Geneva, Switzerland</td>
-                                            <td class="red">20-Sep-21 - 22-Sep-21</td>
+                                            <td class="red">20-Sep - 22-Sep-21</td>
                                         </tr>
                                         <tr>
                                             <th scope="row" class="white">Shanghai</th>
                                             <td class="d-none d-sm-table-cell white">Shanghai, China</td>
-                                            <td class="white">06-Oct-21 - 13-Oct-21</td>
+                                            <td class="white">06-Oct - 13-Oct-21</td>
                                         </tr>
                                         <tr>
                                             <th scope="row" class="red">Basel</th>
                                             <td class="d-none d-sm-table-cell red">Basel, Switzerland</td>
-                                            <td class="red">21-Oct-21 - 27-Oct-21</td>
+                                            <td class="red">21-Oct - 27-Oct-21</td>
                                         </tr>
                                         <tr>
                                             <th scope="row" class="white">Paris</th>
                                             <td class="d-none d-sm-table-cell white">Paris, France</td>
-                                            <td class="white">28-Oct-21 - 03-Nov-21</td>
+                                            <td class="white">28-Oct - 03-Nov-21</td>
                                         </tr>
                                         <tr>
                                             <th scope="row" class="red">ATP Tour Finals</th>
                                             <td class="d-none d-sm-table-cell red">London, UK</td>
-                                            <td class="red">10-Nov-21 - 17-Nov-21</td>
+                                            <td class="red">10-Nov - 17-Nov-21</td>
                                         </tr>
                                         <tr>
                                             <th scope="row" class="white">Davis Cup Finals</th>
                                             <td class="d-none d-sm-table-cell white">Madrid, Spain</td>
-                                            <td class="white">18-Nov-21 - 24-Nov-21</td>
+                                            <td class="white">18-Nov - 24-Nov-21</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -303,16 +251,15 @@
         
 
         <footer class="container-fluid">
-            <div id="footer-info" class="row">
-                <div class="col-sm-4">
-                    <h5 class="uppercase updates">Updates</h5>
-                    <p class="in-line-block">Join to recieve updates on Roger's tennis schedule and his progress on tour.</p>
-                </div>
-                <div class="col-sm-4">
+            <div id="footer-info" class="row footer-main">
+                <div class="col-sm-7 updates">
+                    <h5 class="uppercase">Updates</h5>
+                    <p class="in-line-block footer-text">Join to recieve updates on Roger's tennis schedule and his progress on tour.</p>
+                    <div>&nbsp;</div>
                 <button class="btn btn--cta btn--red btn-lg footer-btn" data-toggle="modal" data-target="#joinModal">Join Today!</button>
                 </div>
-                <div class="col-sm-4">
-                <h5 class="uppercase social">Social Links</h5>
+                <div class="col-sm-5 social">
+                <h5 class="uppercase">Social Links</h5>
                 <ul class="list-inline social-links">
                     <li class="list-inline-item">
                         <a target="blank" href="https://en-gb.facebook.com/Federer">
@@ -359,7 +306,7 @@
                                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required/>
                                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                             </div>
-                            <button type="submit" class="btn btn--cta btn--red">Join Today!</button>
+                            <div class="modal-button" ><button type="submit" class="btn btn--cta btn--red">Join Today!</button></div>
                         </form>
                     </div>
                 </div>
