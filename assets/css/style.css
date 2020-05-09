@@ -3,7 +3,7 @@ body {
 }
 .home-container {
     height: 100vh;
-    background: url("../images/images10.jpg") no-repeat center center fixed; 
+    background: url("../images/hero.jpg") no-repeat center center fixed; 
     background-size: cover;
     
     display: flex;
@@ -145,6 +145,10 @@ body {
     z-index: 1;
 }
 
+.nav-link {
+    scroll-behavior: smooth;
+}
+
 .navbar {
     margin-bottom: 0;
     border: 0;
@@ -262,9 +266,14 @@ footer {
     transform: translate(-50%, -50%);
 }
 
-.modal-content {
-    margin-top: 50%;
+.modal-dialog {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
 }
+  
 
 .modal-button {
     display: flex;
@@ -300,14 +309,18 @@ label {
 
 @media (max-width: 767px) {
     .home-container {
-        background: url(../images/fed.jpg) no-repeat top center fixed;
+        background: url(../images/tall.jpg) no-repeat top center fixed;
         background-size: cover;
+    }
+    .modal-dialog {
+        min-height: calc(100vh - 20px);
     }
 }
 
 @media (max-width: 1024px) {
     .home-container {
-        background: url(../images/fed.jpg) no-repeat top center fixed;
+        background: url(../images/tall.jpg) no-repeat top center fixed;
         background-size: cover;
     }
 }
+
