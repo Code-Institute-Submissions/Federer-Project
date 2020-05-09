@@ -3,22 +3,15 @@ body {
 }
 .home-container {
     height: 100vh;
-    background: url("../images/fed.jpg") no-repeat; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    background: url("../images/images10.jpg") no-repeat center center fixed; 
+    background-size: cover;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  position: relative;
+    position: relative;
 }
-
-
-
-
 
 .opaque-overlay {
     position: absolute;
@@ -302,20 +295,19 @@ label {
     .social {
         margin-top: -20px;
     }  
+    
+}
+
+@media (max-width: 767px) {
+    .home-container {
+        background: url(../images/fed.jpg) no-repeat top center fixed;
+        background-size: cover;
     }
 }
 
-@media screen and (max-width: 767px) {
-    .img-fluid {
-    max-width: 100%;
-    height: auto;
+@media (max-width: 1024px) {
+    .home-container {
+        background: url(../images/fed.jpg) no-repeat top center fixed;
+        background-size: cover;
+    }
 }
-    }
-
-    @media screen and (min-width: 768px)
-    (max-width: 1023px) {
-        .img-fluid {
-            max-width: 100%;
-            height: auto;
-        }
-    }
