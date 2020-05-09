@@ -26,6 +26,8 @@ body {
     color: #fff;
 }
 
+/*Headings*/
+
 .bio-heading {
     margin-bottom: 20px;
     font-weight: 580;
@@ -41,6 +43,8 @@ body {
     margin-bottom: 20px;
     font-weight: 580;
 }
+
+/*Biography*/
 
 .shout {
     vertical-align: middle;
@@ -73,25 +77,10 @@ body {
     border-radius: 50%;
     height: 300px;
     width: 300px;
-}
-
-.table {
     margin-top: 20px;
-    border: 1px solid #888888;
 }
 
-.table-striped .grey {
-    background-color: #898080;
-    color: #fff;
-}
-
-.table-striped .red {
-    background-color: #ffbdb9;
-}
-
-.table-striped .white {
-    background-color: #fff;
-}
+/*Achievements*/
 
 .achievements-container {
     background-color: #e92b13;
@@ -121,16 +110,24 @@ body {
     height: 250px;
 }
 
-/*Block dividers*/
+/*Schedule*/
 
-.block-divider {
-    width: 100%;
-    height: 4px;
-    border: 0;
+.table {
+    margin-top: 20px;
+    border: 1px solid #888888;
 }
 
-.block-divider--red {
-    background-color: #e92b13;  
+.table-striped .grey {
+    background-color: #898080;
+    color: #fff;
+}
+
+.table-striped .red {
+    background-color: #ffbdb9;
+}
+
+.table-striped .white {
+    background-color: #fff;
 }
 
 /*Navbar*/
@@ -143,10 +140,6 @@ body {
     padding-right: 0;
     background: rgba(0,0,0,0.8);
     z-index: 1;
-}
-
-.nav-link {
-    scroll-behavior: smooth;
 }
 
 .navbar {
@@ -190,17 +183,35 @@ body {
     border-color: #e92b13;
 }
 
-.btn--grey {
-    color: #fff;
-    background-color: #898080
-}
-
 .btn--red:hover,
 .btn--red:active,
 .btn--red:focus,
 .btn--red:active:focus {
     background-color: #e92b13;
     border-color: #d10d00;
+}
+
+/*Modal*/
+
+.modal  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-dialog {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+}
+  
+
+.modal-button {
+    display: flex;
+    justify-content: center;
 }
 
 /*Footer*/
@@ -259,27 +270,6 @@ footer {
     padding: 20px;
 }
 
-.modal  {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.modal-dialog {
-  min-height: calc(100vh - 60px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  overflow: auto;
-}
-  
-
-.modal-button {
-    display: flex;
-    justify-content: center;
-}
-
 .form-text {
     display: block;
     margin-top: .5rem;
@@ -304,10 +294,14 @@ label {
     .social {
         margin-top: -20px;
     }  
-    
 }
 
 @media (max-width: 767px) {
+    .shout {
+    width: auto;
+    max-width: 90%;
+    height: auto;
+}
     .home-container {
         background: url(../images/tall.jpg) no-repeat top center fixed;
         background-size: cover;
@@ -323,4 +317,3 @@ label {
         background-size: cover;
     }
 }
-
